@@ -1,0 +1,376 @@
+.col-1 {width: 6%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class *="col-"]{
+    float:center;
+}
+
+*{
+    overflow-x: hidden;
+    
+}
+body{
+    background-color: white;
+}
+h5, h4, h3, h2, li{
+    color:rgb(23, 22, 27);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color:rgb(23, 22, 27);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+}
+
+.button{
+    border-radius:15px;
+    background-color: #54dfcc;
+    border-color:white;
+    border:solid 3px;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color:white;
+    margin: 4px 4px;
+    cursor: pointer;
+}
+/*SIDEBAR*/
+.sidebar{
+    background-color:rgb(89, 240, 220);
+    z-index: 4;
+    position:fixed;
+    margin:0;
+    top:0;
+    left:0;
+    height: 100%;
+
+}
+
+.sidebar ul {
+    position: relative;
+    left: -35%;
+    width: 100%;
+    top:20%;
+
+}
+.sidebar li{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    
+    
+}
+
+.side-labels{
+    margin-bottom: 30%;
+}
+
+.sidebar-icons{
+    font-size: 2em;
+
+}
+/*CARDS*/
+.card{
+    background-color: white;
+    height: 400px;
+    width: 90%;
+    border-radius:10px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+    
+    
+}
+
+.card img{
+    max-width: 100%;
+}
+
+.card h2,h5{
+    position:relative;
+    top:-8%;
+    left:5%;
+    margin:0;
+    padding:0;
+}
+
+.card h5{
+    letter-spacing: .4em;
+    color: rgb(72, 143, 133);
+    text-transform: uppercase;
+    word-wrap: break-word; ;
+}
+
+.ratings{
+    position: relative;
+    bottom:10px;
+    padding:0px 50px 0px 50px;
+}
+.fa-star{
+    color:rgba(255, 166, 50, 0.788);
+    position: relative;
+    left:17%;
+    font-size:1.5em;
+   
+}
+
+hr{
+    width:70%;
+    vertical-align: top;
+}
+
+.fa-comment-dots{
+    z-index: 3;
+    position: relative;
+    left:80%;
+    top:-5%;
+    font-size: 3em;
+    color:rgba(89, 240, 220);
+}
+
+/*SECTION 1*/
+.section1 {
+    background-image:url(images/city.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    position: absolute;
+    top:0vh;
+    z-index:1;
+}
+
+.section1 h1, h4{
+    color:white;
+    margin:0;
+}
+#nav{
+    position: absolute;
+    left: 15%;
+    bottom:0;
+}
+#nav li{
+    padding: 28px 5px 5px 0px;
+    margin:50px;
+}
+
+.section1 li {
+    list-style:none;
+    display: inline-block;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    z-index: 1;
+}
+#landing_btm{
+    position: absolute;
+    bottom:0;
+    height:25%;
+    z-index: 0;
+    background-color: rgba(64, 95, 91, 0.5);
+}
+
+.content1{
+    position:absolute;
+    left:25vw;
+    top: 25vh;
+    height:63%;
+}
+
+#current{
+    border-top: 5px solid white;
+    font-weight: bold;
+   
+    
+}
+
+#header{
+    
+    position: absolute;
+    right:20px;
+}
+
+.section1 button{
+
+    border-radius:15px;
+    background-color: #54dfcc;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    color:white;
+    cursor: pointer;
+    
+   
+}
+
+#search{
+    position: relative;
+    left:10%;
+    top: 60%;
+    
+}
+
+#search-bar{
+    width:70%;
+    height:20px;
+    height:46px;
+    border-radius:50px;
+    border:none;
+    text-indent: 2%;
+}
+
+#search-btn{
+    position: relative;
+    left:-10%;
+    height: 49px;
+    width:10%;
+    border:none;
+}
+/*SECTION 2*/
+
+.trends_container{
+    position: relative;
+    top: 15%;
+    left:15%;
+    height:80%;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 40% 40% 40%;
+    grid-gap: 10px;
+    align-content: start;
+    grid-column-start: 1;
+}
+
+.section2 {
+    background-color:rgb(255, 254, 251);
+    height: 150vh;
+    position: absolute;
+    top:95vh;
+    z-index:1;
+}
+
+.section2 h1 {
+    position:absolute;
+    left:15%;
+    top: 5%;
+    color:rgb(23, 22, 27);
+}
+
+
+
+#show_more{
+    position: absolute;
+    top:40%;
+    left:75%;
+}
+/*SECTION 3*/
+.section3{
+    background-image:url(images/food4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    position: absolute;
+    top:225vh;
+    z-index:1;
+}
+
+
+.section3 div{
+    position:absolute;
+    left:45%;
+    top: 5%;
+    text-align: center;
+    
+}
+
+.section3 h4{
+    color:black;
+}
+
+
+/*SECTION 4*/
+.section4{
+    background-color:white;
+    height: 75vh;
+    position: absolute;
+    top:260vh;
+    z-index:1;
+    overflow-y: hidden;
+}
+
+.section4 button{
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    left:68%;
+    
+}
+
+.section4 h1{
+    position: absolute;
+    left:15%;
+    top:10%;
+    color:rgb(23, 22, 27)
+}
+
+.section4 h3{
+    position: absolute;
+    top:40%;
+    left:65%;
+    color:rgb(23, 22, 27);
+}
+
+#grid_container{
+    position:relative;
+    top: 30%;
+    left:15%;
+    height:100%;
+    display: grid;
+    grid-template-columns: 15% 15% 15%;
+    grid-template-rows: 35%;
+    grid-gap: 10px;
+    align-content: flex-start;
+    grid-column-start: 1;
+
+}
+
+.section4 .fa-star{
+    left:20%;
+}
+
+
+/*FOOTER*/
+.footer{
+    background-color:#FEDABB;
+    height: 28vh;
+    position: absolute;
+    top:335vh;
+    z-index:1;
+}
+.footer ul{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    top:13%;
+}
+
+.footer li{
+    padding:20px;
+}
+#links{
+    position: absolute;
+    right:0;
+}
+
+.card{
+    background-color: white;
+}
